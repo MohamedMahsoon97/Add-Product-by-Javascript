@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!------------------------ Start Section --------------------------->
+        <section class="main" id="main">
+            <h2 class="heading">Add New Product</h2>
+            <div class="container">
+                <form id="my-form" name="register">
+                    <label for="name">Product Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Ex : Labtop">
+                
+                    <label for="Price">Product Price</label>
+                    <input type="text" id="Price" name="Price" placeholder="Ex : 1000$">
+                
+                    <label for="Category">Product Category</label>
+                    <input type="text" id="Category" name="Category" placeholder="Ex : Dell">
+                
+                    <label for="Code">Product Code</label>
+                    <input type="text" id="Code" name="Code" placeholder="Ex : DeFwr-735476" title="type here model and company name with dash between them both 5 chars">
+                
+                    <label for="subject">Product Desc</label>
+                    <textarea id="subject" name="subject" placeholder="Write something about your opinion.."></textarea>
+                
+                    <input type="submit" value="Add Product" id="add-product">
+                </form>
+            </div>
+            <table class="table-data" id="products">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Product Category</th>
+                        <th>Product Company</th>
+                        <th>Product Model</th>
+                        <th>Product Desc</th>
+                        <th onclick="clearProducts()"><a href="" style="text-decoration: none; color: red;">Clear All Products</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+        <!------------------------ End Section ----------------------------->
+        <script src="js/script.js"></script>
+    </body>
+</html>

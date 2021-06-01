@@ -1,0 +1,195 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------- Start section ----------------------------- */
+.main
+{
+    background-image: url("../images/istockphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px 50px;
+    min-height: 1000px;
+}
+.heading
+{
+    text-align: center;
+    position: absolute;
+    top: -300px;
+    margin: 0px auto 80px !important;
+    padding: 0px 20px 40px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    animation-name: toTop;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    transform: translate(135%,30%);
+    -moz-transform: translate(135%,30%);
+    -ms-transform: translate(135%,30%);
+    -o-transform: translate(135%,30%);
+    -webkit-transform: translate(135%,30%);
+}
+@keyframes toTop {
+    0%
+    {
+        opacity: 0;
+        top: -300px;
+    }
+    20%
+    {
+        opacity: .5;
+        top: 0px;
+    }
+    35%
+    {
+        opacity: 1;
+        top: -100px;
+    }
+    50%
+    {
+        opacity: .5;
+        top: 0px;
+    }
+    74%
+    {
+        opacity: 1;
+        top: -100px;
+    }
+    90%
+    {
+        opacity: .7;
+        top: 0px;
+    }
+    100%
+    {
+        top: 10px;
+    }
+}
+.container
+{
+    width: 50%;
+    margin: 120px auto;
+    padding: 20px 30px;
+    background-color: rgba(243, 243, 243,.55);
+    box-shadow: 0px 8px 79px 0 rgb(0 0 0 / 19%);
+    border-radius: 2px 2px 20px 20px;
+    opacity: 0;
+    animation-name: showIt;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+}
+@keyframes showIt {
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.6;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.container::before
+{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 48%;
+    border-bottom: 30px solid rgba(243, 243, 243,.55);
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    animation-name: showItBefore;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes showItBefore {
+    0%
+    {
+        top: 150px;
+        /* opacity: 0; */
+    }
+    100%
+    {
+        top: 120px;
+        /* opacity: 1; */
+    }
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    display: block;
+}
+input[type=text]:focus
+{
+    outline: none;
+}
+textarea:focus
+{
+    outline: none;
+}
+input[type=submit] {
+    background-color: #355a9e;
+    color: white;
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #0f3781;
+}
+
+.table-data, td, th {  
+    border: 1px solid #ddd;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.table-data {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 40px auto;
+}
+.table-data tr td i
+{
+    color: rgb(253, 15, 15);
+    cursor: pointer;
+}
+.table-data th
+{
+    color: #e9cb1e;
+}
+.table-data th, td {
+    padding: 15px;
+}
+/* ----------------------------- End section ----------------------------- */
